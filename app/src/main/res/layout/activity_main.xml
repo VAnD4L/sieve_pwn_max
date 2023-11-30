@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Sieve_pwn_max.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Sieve_pwn_max.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart ="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="open exported activity"
+        android:onClick="FUNC1"
+         />
+
+    <EditText
+        android:id="@+id/OpenExportedActivityEditPackageName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Package name" />
+
+    <Spinner
+
+        android:id="@+id/spinner_ExtraType"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="10dp"
+        android:spinnerMode="dropdown"
+        android:text="[Extra Type]"
+        />
+
+    <EditText
+        android:id="@+id/OpenExportedActivityEditExtraValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Extra Value" />
+
+
+
+    <Button
+         android:id="@+id/button2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button1"
+         android:layout_marginTop="150dp"
+         android:layout_marginStart ="10dp"
+         android:layout_centerHorizontal="true"
+         android:text="sieve leak"
+         android:onClick="FUNC2"
+         />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart ="75dp"
+        android:layout_centerHorizontal="true"
+        android:text="sieve leak 2"
+        android:onClick="FUNC3"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart ="75dp"
+        android:layout_centerHorizontal="true"
+        android:text="sieve sqli"
+        android:onClick="FUNC4"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart ="75dp"
+        android:layout_centerHorizontal="true"
+        android:text="sieve directory traversal"
+        android:onClick="FUNC5"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart ="175dp"
+        android:text="TextView" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
